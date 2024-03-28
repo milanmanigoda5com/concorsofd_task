@@ -18,16 +18,10 @@ const ListItem = (item) => {
   return (
     <p
       onClick={(row) => {
-        console.log(row, "ROW");
-        // if (row.target.innerText === clickedGroup) {
-        //   setIsClicked(true);
-        // } else {
-        //   setIsClicked(false);
-        // }
         setIsClicked(true);
-
         dispatch(setSelectedGroup(row.target.innerText));
       }}
+      // treba podesiti , da promjeni boju kada se klikne , popravi ovo
       style={{ color: isClicked ? "yellow" : "white" }}
       key={item.id}
     >

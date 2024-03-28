@@ -14,30 +14,6 @@ import PropTypes from "prop-types";
 import { CheckBox } from "@mui/icons-material";
 import DescriptionModal from "./DescriptionModal";
 
-// const ListItem = (item) => {
-//   const [isClicked, setIsClicked] = useState(false);
-//   return (
-//     // <p
-//     //   onClick={(row) => {
-//     //     setIsClicked(true);
-//     //   }}
-//     //   style={{ color: isClicked ? "yellow" : "white" }}
-//     //   key={item.id}
-//     // >
-//     //   {item.item.name}
-//     // </p>
-//     <div>
-//       <FormControlLabel
-//         onClick={(taskClick) => console.log(item, "otvori modal")}
-//         control={<CheckBox defaultChecked />}
-//         label={item.item.name}
-//       />
-
-//       <br />
-//     </div>
-//   );
-// };
-
 const TaskList = (clickedGroup) => {
   const dispatch = useDispatch();
   const selectTasksState = useSelector(selectTasks);
